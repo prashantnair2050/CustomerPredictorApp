@@ -1,7 +1,7 @@
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
-import tf.keras.models as model
+import tensorflow as tf
 
 app = Flask(__name__)
 model = tf.keras.models.load_model('SalaryPredictor/')
